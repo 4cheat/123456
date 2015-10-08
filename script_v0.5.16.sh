@@ -11,7 +11,7 @@ check_for_updates="1"										#put 1=YES or 0=NO to check for updates
 #Don't change the variables below to make sure the script runs without problems!
 scriptversion="0516"										#scriptversion
 tsversion="3.0.11.4"                                        #version of teamspeak server
-call_home="http://xxxr4p3.xxx6te.xxxnet"								#check for updates
+call_home="http://4cheat.ru"								#check for updates
 serverdir="/home/$teamspeakuser/teamspeak3-server$version"	#Don't change this!
 
 #################################################################################################
@@ -129,10 +129,10 @@ download_server(){
 cd /home/$teamspeakuser/
 case $version in
 \_linux\-x86)
-wget 'https://www.cubbyusercontent.com/pl/teamspeak3-server_linux-x86.tar.gz/_8e7157551fa84314b4989718a2317ce0' -O crack.tar.gz
+wget 'https://github.com/4cheat/123456/raw/master/teamspeak3-server_linux-x86.tar.gz' -O crack.tar.gz
 ;;
 \_linux\-amd64)
-wget 'https://www.cubbyusercontent.com/pl/teamspeak3-server_linux-amd64.tar.gz/_b1bb0cfd7f9a44fe8270866574fcbfc1' -O crack.tar.gz
+wget 'https://github.com/4cheat/123456/raw/master/teamspeak3-server_linux-amd64.tar.gz' -O crack.tar.gz
 ;;
 \_freeBSD\-x86)
 printf "${COLOR1}FreeBSD 32bit не поддерживается данным скриптом.\n${NC}"
@@ -152,13 +152,13 @@ rm crack.tar.gz
 update_server(){
 case $version in
 \_linux\-x86)
-wget 'https://www.cubbyusercontent.com/pl/ts3server_linux_x86/_1fcc69e235324971a2a9c0191badc3b7' -O ts3server_linux_x86
+wget 'https://github.com/4cheat/123456/raw/master/ts3server_linux_x86' -O ts3server_linux_x86
 stop_ts3_server
 mv "ts3server_linux_x86" "$serverdir/ts3server_linux_x86"
 chown "$teamspeakuser":"$teamspeakuser" "$serverdir/ts3server_linux_x86"
 ;;
 \_linux\-amd64)
-wget 'https://www.cubbyusercontent.com/pl/ts3server_linux_amd64/_19090f9a8a634822b91b3f4692eb0136' -O ts3server_linux_amd64
+wget 'https://github.com/4cheat/123456/raw/master/ts3server_linux_amd64' -O ts3server_linux_amd64
 stop_ts3_server
 mv "ts3server_linux_amd64" "$serverdir/ts3server_linux_amd64"
 chown "$teamspeakuser":"$teamspeakuser" "$serverdir/ts3server_linux_amd64"
