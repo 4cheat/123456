@@ -17,7 +17,7 @@ serverdir="/home/$teamspeakuser/teamspeak3-server$version"	#Don't change this!
 #################################################################################################
 
 show_credits(){
-printf "${COLOR1}#######################################################\n#     TS3 Server вылеченный ${COLOR2}$scriptversion ${COLOR1}от ${COLOR2}4cheat${COLOR1}      #\n#     Посетите наш форум ${COLOR2}www.4cheat.ru${COLOR1}                  #\n#######################################################\n${NC}"
+printf "${COLOR1}#######################################################\n#     TS3 Server вылеченный ${COLOR2}$scriptversion ${COLOR1}от ${COLOR2}4cheat${COLOR1}            #\n#     Посетите наш форум ${COLOR2}www.4cheat.ru${COLOR1}                #\n#######################################################\n${NC}"
 }
 
 show_special_credits(){
