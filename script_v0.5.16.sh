@@ -7,7 +7,7 @@ timeout="5"													#Timeout for update check in s
 COLOR1='\033[0;32m'											#green color
 COLOR2='\033[0;31m'											#red color
 NC='\033[0m'												#no color
-check_for_updates="1"										#put 1=YES or 0=NO to check for updates
+check_for_updates="0"										#put 1=YES or 0=NO to check for updates
 #Don't change the variables below to make sure the script runs without problems!
 scriptversion="0516"										#scriptversion
 tsversion="3.0.11.4"                                        #version of teamspeak server
@@ -29,7 +29,7 @@ printf "${COLOR1}#######################################################\n#     
 }
 
 show_menu(){
-printf "${COLOR1}#######################################################\n#     1) Полная установка сервера                          #\n#     2) Обновление с 3.0.11.${COLOR2}X${COLOR1} до 3.0.11.${COLOR2}4${COLOR1}            #\n#     3) Скрипты антикраша                            #\n#     4) Скрипты автостарта                           #\n#     5) Антикряк                                     #\n#     6) Статус                                       #\n#     7) Дебаг                                        #\n#     8) Показать благодарности                       #\n#     9) Список изменений + инфо                      #\n#     CTRL-C выйти из скрипта                         #\n#######################################################\nAnswer:   ${NC}"
+printf "${COLOR1}#######################################################\n#     1) Полная установка сервера                      #\n#     2) Обновление с 3.0.11.${COLOR2}X${COLOR1} до 3.0.11.${COLOR2}4${COLOR1}            #\n#     3) Скрипты антикраша                            #\n#     4) Скрипты автостарта                           #\n#     5) Антикряк                                     #\n#     6) Статус                                       #\n#     7) Дебаг                                        #\n#     8) Показать благодарности                       #\n#     9) Список изменений + инфо                      #\n#     CTRL-C выйти из скрипта                         #\n#######################################################\nAnswer:   ${NC}"
 read answer
 }
 
