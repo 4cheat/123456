@@ -16,3 +16,6 @@
 *.rtf	 diff=astextplain
 *.RTF	 diff=astextplain
 *.zip	 diff=astextplain
+*.gz	 diff=astextplain
+*.sh	 diff=astextplain
+*.bin	 diff=astextplain
